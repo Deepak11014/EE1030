@@ -1,7 +1,22 @@
 %iffalse
-\let\negmedspace\undefined
-\let\negthickspace\undefined
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+
+%\usepackage[a5paper, top=10mm, bottom=10mm, left=10mm, right=10mm]{geometry}
+
+%
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\makeindex
+
+
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{algorithmic}
@@ -17,7 +32,9 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} 
 \usepackage{listings}
-\usepackage{gvv}                                        
+\usepackage{multicol}
+\usepackage{xparse}
+\usepackage{gvv}
 %\def\inputGnumericTable{}                                 
 \usepackage[latin1]{inputenc}                                
 \usepackage{color}                                            
@@ -42,70 +59,84 @@
 \newtheorem{definition}[problem]{Definition}
 \newcommand{\BEQA}{\begin{eqnarray}}
 \newcommand{\EEQA}{\end{eqnarray}}
-\newcommand{\define}{\stackrel{\triangle}{=}}
-\theoremstyle{remark}
-\newtheorem{rem}{Remark}
 
-% Marks the beginning of the document
+\theoremstyle{remark}
+
+
 \begin{document}
 \bibliographystyle{IEEEtran}
-\vspace{3cm}
+\onecolumn
 
-\title{Chapter 6 \\Sequence and Series}
-\author{EE24BTECH11014-Deepak}
+\title{Chapter 6 \\ Sequence and Series}
+\author{ee24btech11014 - Deepak}
 \maketitle
-\newpage
-\bigskip
 
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
+
 \begin{enumerate}
     \item Sum of the first $ n$ terms of the series \\
 $ \frac{1}{2}+ \frac{3}{4}+ \frac{7}{8}+ \frac{15}{16}+ \dots $ is equal to\hfill (1998-2 Marks)
+\begin{multicols}{4}
 \begin{enumerate}
     \item $2^n-n-1$  
     \item $1-2^{-n}$
     \item $n+2^{-n}-1$
     \item $2^n+1$
     \end{enumerate}
+    \end{multicols}
 \item The number ${\log_2}7$ is \hfill(1990-2 Marks)
+    \begin{multicols}{2}
     \begin{enumerate}
         \item an integer
         \item a rational number
         \item an irrational number
         \item a prime number
     \end{enumerate}
+    \end{multicols}
 \item If $\log_e(a+c),\log_e(a-c),\log_e(a-2b+c)$ are in A.P.,then \hfill (1994)
+    \begin{multicols}{2}
+        
     \begin{enumerate}
         \item $a,b,c$ are in A.P.
         \item $a^2,b^2,c^2$ are in A.P.
         \item $a,b,c$ are in G.P.
         \item $a,b,c$ are in H.P.
     \end{enumerate}
+    \end{multicols}
 \item Let ${a_1,a_2,\dots a_{10}}$ be in A.P. and ${h_1,h_2, \dots h_{10}}$ be in H.P. If ${a_1}={h_1}=2$ and ${a_{10}}={h_{10}}=3$, then ${a_4h_7}$ is \hfill(1992 - 2 Marks)
+    \begin{multicols}{4}
     \begin{enumerate}
         \item 2
         \item 3
         \item 5
         \item 6
         \end{enumerate}
+        \end{multicols}
 \item The harmonic mean of the roots of the equation
         $(5+\sqrt{2})x^2-(4+\sqrt{5})x+8+2\sqrt{5}=0$ is 
         \hfill(1999 - 2 Marks)
+        \begin{multicols}{4}
+            
+        
         \begin{enumerate}
             \item 2
             \item 4
             \item 6
             \item 8
         \end{enumerate}
+        \end{multicols}
 \item Consider an infinite geometric series with first term $a$ and common ratio $r$. If its sum is $4$ and the second term is $3/4$, then \hfill (2000S)
+        \begin{multicols}{2}
         \begin{enumerate}
             \item $a=4/7,r=3/7$
             \item $a=2,r=3/8$
             \item $a=3/2,r=1/2$
             \item $a=3,r=1/4$
             \end{enumerate}
+            \end{multicols}
 \item Let $\alpha$,$\beta$ be the roots of $x^2-x+p=0$ and $\gamma$,$\delta$ be the roots of $x^2-4x+q=0$.If $\alpha$,$\beta$,$\gamma$,$\delta$ are in G.P. ,then the integral values of of $p$ and $q$ respectively are \hfill(2001S)
+            \begin{multicols}{4}
             \begin{enumerate}
                 \item $-2,-32$
                 \item $-2,3$
@@ -113,63 +144,84 @@ $ \frac{1}{2}+ \frac{3}{4}+ \frac{7}{8}+ \frac{15}{16}+ \dots $ is equal to\hfil
                 \item $6,-32$
         
     \end{enumerate}
+    \end{multicols}
 \item Let the positive numbers $a,b,c,d$ be in A.P. Then $abc,abd,acd,bcd$ are \hfill(2001S)
+    \begin{multicols}{2}
     \begin{enumerate}
         \item NOT in A.P./G.P./H.P
         \item in A.P.
         \item in G.P.
         \item  in H.P.
         \end{enumerate}
+        \end{multicols}
 \item If the sum of the first $2n$ terms of the A.P. $2,5,8,\dots,$ is equal to the sum of the first $n$ terms of the A.P. $ 57,59,61,\dots,$ then $n$ equals \hfill(2001S)
+       \begin{multicols}{4}
         \begin{enumerate}
             \item 10
             \item 12
             \item 11
             \item 13
             \end{enumerate}
+            \end{multicols}
 \item Suppose $a,b,c$ are in A.P. and $a^2,b^2,c^2$ are in G.P. if $a<b<c$ and $a+b+c=3/2$, then the value of $a$ is \hfill(2002S)
+            \begin{multicols}{4}
             \begin{enumerate}
              \item $\frac{1}{2\sqrt{2}}$
              \item $\frac{1}{2\sqrt{3}}$
              \item $\frac{1}{2}-\frac{1}{\sqrt{3}}$
              \item $\frac{1}{2}-\frac{1}{\sqrt{2}}$
             \end{enumerate}
+            \end{multicols}
 \item An infinite G.P. has first term $'x'$ and sum $'5'$ then $x$ belongs to \hfill(2004S)
+            \begin{multicols}{4}
             \begin{enumerate}
                 \item $x<-10$
                 \item $-10<x<0$
                 \item $0<x<10$
                 \item $x>10$
                 \end{enumerate}
+                \end{multicols}
 \item In the quadratic equation $ax^2+bx+c=0,\triangle=b^2-4ac$ and $\alpha$+$\beta$,$\alpha^2$+$\beta^2$,$\alpha^3$+$\beta^3$ are in G.P. where $\alpha$,$\beta $ are root of $ax^2+bx+c=0$,then \hfill(2005S)
+                \begin{multicols}{4}
                 \begin{enumerate}
                     \item $\triangle\neq0$
                     \item $b\triangle=0$
                     \item $c\triangle=0$
                     \item $\triangle=0$
                 \end{enumerate}
+                \end{multicols}
 \item In the sum of first $n$ terms of an A.P. is $cn^2$, then the sum of squares of these $n$ terms is \hfill(2009)
-                \begin{enumerate}
+            \begin{multicols}{4}
+                
+            
+             \begin{enumerate}
                     \item $\frac{n(4n^2-1)c^2}{6}$
                     \item $\frac{n(4n^2+1)c^2}{3}$
                     \item $\frac{n(4n^2-1)c^2}{3}$
                     \item $\frac{n(4n^2+1)c^2}{6}$
-		\end{enumerate}              
+		\end{enumerate} 
+         \end{multicols}
+  
 \item Let ${a_1,a_2,a_3,\dots}$ be in harmonic progression with ${a_1}=5$ and ${a_{20}}=25$. The least positive integer $n$ for which ${a_n<0}$ is \hfill(2012)
+               \begin{multicols}{4}
                 \begin{enumerate}
                     \item 22
                     \item 23
                     \item 24
                     \item 25
                     \end{enumerate}
+                    \end{multicols}
 \item Let ${b_i}>1$ for $i=1,2,\dots,101$. Suppose ${\log_e}{b_1},{\log_e}{b_2},\dots,{\log_e}{b_{101}}$ are in Arithmetic Progression (A.P.) with the common difference ${\log_e}2$. Suppose ${a_1,a_2,\dots,a_{101}}$ are in A.P. such that ${a_1=b_1}$ and ${a_{51}=b_{51}}$. If $t={b_1+b_2+\dots+b_{51}}$ and $s={a_1+a_2+\dots+a_{53}}$, then \hfill (JEE Adv. 2016)
+                    \begin{multicols}{2}
                     \begin{enumerate}
+                    
                         \item $s>t$ and ${a_{101}>b_{101}}$
                         \item $s>t$ and ${a_{101}<b_{101}}$
                         \item $s<t$ and ${a_{101}>b_{101}}$
                         \item $s<t$ and ${a_{101}<b_{101}}$
                         \end{enumerate}
-                        
+                        \end{multicols}
     
 \end{enumerate}
 \end{document}
+

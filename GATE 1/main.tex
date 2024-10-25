@@ -1,0 +1,327 @@
+%iffalse
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+
+%\usepackage[a5paper, top=10mm, bottom=10mm, left=10mm, right=10mm]{geometry}
+
+%
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\makeindex
+
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{xparse}
+\usepackage{gvv}
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+
+\theoremstyle{remark}
+
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+\onecolumn
+
+\title{'2007-MA-(52-68)'}
+\author{EE24BTECH11014 - Deepak }
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+
+
+    \item Consider the quadrature formula 
+    \begin{center}
+        $\int_{-1}^{1}|x|f(x)dx=\frac{1}{2}[f(x_{0})+f(x_{1})],$ 
+    \end{center}
+            
+            where $x_0$ and $x_1$ are quadrature points. Then the highest degree of the polynomial, for which the above formula is exact, equals
+        
+            \begin{multicols}{4}
+            \begin{enumerate}
+                \item $1$
+                \item $2$
+                \item $3$
+                \item $4$
+            \end{enumerate}
+            \end{multicols}
+            
+                \item Let $A,B $and $C$ be three events such that\\
+                $P(A)=0.4,P(B)=0.5,P(A\cup B)=0.6,P(C)=0.6$ and $P(A\cap B\cap C)=0.1$. \\
+                Then $P(A\cup B|C)$=
+                \begin{multicols}{4}
+                \begin{enumerate}
+                    \item $\frac{1}{2}$
+                    \item $\frac{1}{3}$
+                    \item $\frac{1}{4}$
+                    \item $\frac{1}{5}$
+                \end{enumerate}
+                \end{multicols}
+
+                \item Consider two identical boxes $B_{1}$ and $B_{2}$, where the box $B_{i}(i=1,2)$ contains $i+1$ red and  $5-i-1$ white balls. A fair die is cast. Let the number of dots shown on th                      e top face of the die be $ N$. If $ N$ is even or $5$, two balls are drawn with replacement from the box $B_{1}$, otherwise, two balls are drawn with replacement from the box $B_                      {2}$. The probability that the two drawn balls are of different colours is 
+                \begin{multicols}{4}
+                \begin{enumerate}
+                    \item $\frac{7}{25}$
+                    \item $\frac{9}{25}$
+                    \item $\frac{12}{25}$
+                    \item $\frac{16}{25}$
+                \end{enumerate}
+                \end{multicols}
+
+                \item Let $X_1,X_2,...$ be a sequence of independent and identically distributed random varables with
+                \begin{center}
+                   $P(X_1=-1) = P(X_1=1) = \frac{1}{2}$. 
+                \end{center}
+                Suppose for the standard normal random  variable $Z$, $P(-0.1<Z\le0.1)$ = $0.08$.
+                If $S_n = \sum_{i=1}^{n^2} X_i$, then $\lim_{n \to \infty} P(S_n>\frac{n}{10})$ =
+                \begin{multicols}{4}
+                \begin{enumerate}
+                    \item $0.42$
+                    \item $0.46$
+                    \item $0.50$
+                    \item $0.54$
+                \end{enumerate}
+                    
+                \end{multicols}
+
+                \item Let $X_1,X_2,...X_5$ be a random sample of size $5$ from a population having standard normal distribution. Let
+                \begin{center}
+                    $\overline{X} = \frac{1}{5}\sum_{i=1}^{5} X_i$ and $T = \sum_{i=1}^{5} (X_i-\overline{X})^2$
+                \end{center}
+                Then $E(T^2\overline{X}^2)$ =
+                \begin{multicols}{4}
+                \begin{enumerate}
+                    \item $3$
+                    \item $3.6$
+                    \item $4.8$
+                    \item $5.2$
+                \end{enumerate}
+                    
+                \end{multicols}
+
+                \item Let $x_1=3.5, x_2=7.5$ and $x_3=5.2$ be the observed values of random sample of size three from a population having uniform distribution over the interval $(\theta,\theta+5),$ where $\theta \in(0,\infty)$ is unknown and is to be estimated. Then which of the following is NOT a maximum likelihood estimate of $\theta ?$
+                \begin{multicols}{4}
+                \begin{enumerate}
+                    \item $2.4$
+                    \item $2.7$
+                    \item $3.0$
+                    \item $3.3$
+                \end{enumerate}
+                    
+                \end{multicols}
+
+                \item The value of 
+                \begin{center}
+                    $\int_{0}^{\infty} \int_{\frac{1}{y}}^{\infty} x^4 e^{-x^3 y} \, dx \, dy$
+                \end{center}
+                equals 
+                \begin{multicols}{4}
+                \begin{enumerate}
+                    \item $\frac{1}{4}$
+                    \item $\frac{1}{3}$
+                     \item $\frac{1}{2}$
+                     \item $1$
+                \end{enumerate}
+                    
+                \end{multicols}
+
+                \item $\lim_{n \to \infty} \left[ (n+1) \int_{0}^{1} x^n \ln(1+x) \, dx \right] =$
+                \begin{multicols}{4}
+                \begin{enumerate}
+                    \item $0$
+                    \item $ln 2$
+                    \item $ln 3$
+                    \item $\infty$
+                \end{enumerate}
+                    
+                \end{multicols}
+
+                \item Consider the function $f: \mathbb{R} \to \mathbb{R}$ defined by
+                \begin{center}
+			$  f(x)=\begin{cases}
+                   x^4,  \text{if  x  is rational} \\
+                   2x^2-1,  \text{if x is irrational}
+                    \end{cases}$ 
+                \end{center}
+                Let $S$ be the set of points where $f$ is continuous. Then 
+                \begin{multicols}{4}
+                \begin{enumerate}
+                \item $S=\{1\}$
+                    \item $S=\{-1\}$
+                    \item $S=\{-1,1\}$
+                    \item $S=\phi$
+                \end{enumerate}
+                    
+                \end{multicols}
+
+                \item For a positive real number $p$, let \{$f_n : n=1,2,.......\}$ be a sequence of functions defined on $[0,1]$ by 
+                \begin{center}
+                   $ f_n(x) = \begin{cases}
+                    n^{p+1}x, & \text{if }  0 \leq x \leq \frac{1}{n} \\
+                    \frac{1}{x^p}, & \text{if }  \frac{1}{n} < x \leq 1
+                    \end{cases} $
+                \end{center}
+                Let $f(x) = \lim_{n \to \infty} f_n(x), x \in [0, 1]$. Then, on $[0,1],$ 
+                \begin{enumerate}
+                    \item $f$ is Riemann integrable
+                    \item the improper integral $\int_{0}^{1} f(x) dx$ converges for $p\ge 1$
+                    \item the improper integral $\int_{0}^{1} f(x) dx$ converges for $p<1$
+                    \item $f_n$ converges uniformly 
+                \end{enumerate}
+
+                \item Which of the following inequality is NOT true for $x \in [\frac{1}{4}, \frac{3}{4}]$ :
+                \begin{multicols}{2}
+                \begin{enumerate}
+                    
+                      \item $e^{-x} > \sum_{j=0}^{2} \frac{(-x)^j}{j!}$
+                      \item $e^{-x} < \sum_{j=0}^{3} \frac{(-x)^j}{j!}$
+                       \item $e^{-x} > \sum_{j=0}^{4} \frac{(-x)^j}{j!}$
+                       \item $e^{-x} > \sum_{j=0}^{5} \frac{(-x)^j}{j!}$
+                \end{enumerate}
+                    
+                \end{multicols}
+
+                \item Let $u(x,y)$ be the solution to the Cauchy problem 
+                \begin{center}
+                    $xu_x+u_y = 1, u(x,0) = 2 ln(x), x>1$.
+                \end{center}
+                Then $u(e,1)$ =
+                \begin{multicols}{4}
+                \begin{enumerate}
+                    \item $-1$
+                    \item $0$
+                    \item $1$
+                    \item $e$
+                \end{enumerate}
+                    
+                \end{multicols}
+
+                \item Suppose 
+                \begin{center}
+                   $ y(x) = \lambda \int_{0}^{2\pi} y(t) \sin(x+t) \, dt, \quad x \in [0, 2\pi]$
+                \end{center}
+                has eigenvalues $\lambda=\frac{1}{\pi}$ and $\lambda=\frac{-1}{\pi}$ with corresponding eigenfunctions $y_1(x)=\sin{(x)}+\cos{(x)}$ and $y_2(x)=\sin{(x)}-\cos{(x)}$, respectively . Then the integral equation 
+                \begin{center}
+                   $ y(x) = f(x) + \frac{1}{\pi} \int_{0}^{2\pi} y(t) \sin(x+t) \, dt, \quad x \in [0, 2\pi]$
+                \end{center}
+                has a solution when $f(x)$ =
+                \begin{multicols}{2}
+                \begin{enumerate}
+                    \item $1$
+                    \item $\cos{(x)}$
+                    \item $\sin{(x)}$
+                    \item $1+\sin{(x)}+\cos{(x)}$
+                \end{enumerate}
+                    
+                \end{multicols}
+
+                \item Consider the Neumann problem 
+                \begin{center}
+                    $u_{xx} + u_{yy} = 0, \quad 0 < x < \pi, \quad -1 < y < 1$\\
+			$u_x(0, y) = u_x(\pi, y) = 0$\\
+                    $u_y(x, -1) = 0, \quad u_y(x, 1) = \alpha + \beta \sin(x)$  
+
+                \end{center}
+                The problem admits solution for 
+                \begin{multicols}{2}
+                \begin{enumerate}
+                    \item $\alpha=0,\beta=1$
+                    \item $\alpha=-1,\beta=\frac{\pi}{2}$
+                    \item $\alpha=1,\beta=\frac{\pi}{2}$
+                    \item $\alpha=1,\beta=-\pi$
+                \end{enumerate}
+                    
+                \end{multicols}
+
+                \item The functional 
+                \begin{center}
+                    $\int_{0}^{1} (1+x)(y')^2 \, dx, \quad y(0) = 0, \quad y(1) = 1$,
+                \end{center}
+                possesses
+                \begin{enumerate}
+                    \item strong maxima 
+                    \item strong minima 
+                    \item weak maxima but NOT a strong maxima 
+                    \item weak minima but NOT a strong minima 
+                \end{enumerate}
+
+                \item The value of $\alpha$ for which the integral equation 
+                \begin{center}
+                    $u(x) = \alpha \int_{0}^{1} e^{x-t} u(t) \, dt$
+                \end{center}
+                has a non-trivial solution is 
+                \begin{multicols}{4}
+                \begin{enumerate}
+                    \item $-2$
+                    \item $-1$
+                    \item $1$
+                    \item $2$
+                \end{enumerate}
+                    
+                \end{multicols}
+
+                \item Let $P_n(x)$ be the Legendre polynomial of degree $n$ and let 
+                \begin{center}
+                     $P_{m+1}(0)=-\frac{m}{m+1}P_{m-1}(0), \quad m=1,2,.....$
+                \end{center}
+                If $P_n(0)=-\frac{5}{16}$,then \quad $\int_{-1}^{1}P_n^2(x)dx$ =
+                \begin{multicols}{4}
+                \begin{enumerate}
+                    \item $\frac{2}{13}$
+                    \item $\frac{2}{9}$
+                    \item $\frac{5}{16}$
+                    \item $\frac{2}{5}$
+                \end{enumerate}
+                    
+                \end{multicols}
+            
+            \end{enumerate}
+
+\end{document}i

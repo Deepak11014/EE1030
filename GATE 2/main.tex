@@ -1,0 +1,203 @@
+%iffalse
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+
+%\usepackage[a5paper, top=10mm, bottom=10mm, left=10mm, right=10mm]{geometry}
+
+%
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\makeindex
+
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{xparse}
+\usepackage{gvv}
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+
+\theoremstyle{remark}
+
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+\onecolumn
+
+\title{'2013-PH-(14-26)'}
+\author{EE24BTECH11014 - Deepak }
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section{carry one mark each}
+\begin{enumerate}
+    \item Interference fringes are seen at an observation plane $z=0$, by the superposition of two plane waves $
+    A_1 \exp[i(\overrightarrow{k}_1 \cdot \overrightarrow{r} - \omega t)] 
+  \textbf{ and }   A_2 \exp[i(\overrightarrow{k}_2 \cdot \overrightarrow{r} - \omega t)]$, where $A_1$ and $A_2$ are real amplitudes. The condition for interference maximum is 
+
+  \begin{enumerate}
+    \item $(\overrightarrow{k}_1 - \overrightarrow{k}_2) \cdot \overrightarrow{r} = (2m+1)\pi$
+    \item $(\overrightarrow{k}_1 - \overrightarrow{k}_2) \cdot \overrightarrow{r} = 2m\pi$
+    \item $(\overrightarrow{k}_1 + \overrightarrow{k}_2) \cdot \overrightarrow{r} = (2m+1)\pi$
+    \item $(\overrightarrow{k}_1 + \overrightarrow{k}_2) \cdot \overrightarrow{r} = 2m\pi$
+\end{enumerate}
+
+
+\item For a scalar function $\phi$ satisfying the Laplace equation, $\nabla \phi$ has
+
+\begin{enumerate}
+    \item zero curl and non-zero divergence
+    \item non-zero curl and zero divergence
+    \item zero curl and zero divergence
+    \item non-zero curl and non-zero divergence
+\end{enumerate}
+
+ \item A circularly polarized monochromatic plane wave is incident on a dielectric interface at Brewster angle. Which one of the following statements is CORRECT?
+
+\begin{enumerate}
+    \item The reflected light is plane polarized in the plane of incidence and the transmitted light is circularly polarized.
+    \item The reflected light is plane polarized perpendicular to the plane of incidence and the transmitted light is plane polarized in the plane of incidence.
+    \item The reflected light is plane polarized perpendicular to the plane of incidence and the transmitted light is elliptically polarized.
+    \item There will be no reflected light and the transmitted light is circularly polarized.
+\end{enumerate}
+
+\item Which one of the following commutation relations is NOT CORRECT? Here, symbols have their usual meanings.
+\begin{enumerate}
+    \item (A) $[L^2, L_z] = 0$
+    \item (B) $[L_x, L_y] = ihL_z$
+    \item (C) $[L_z, L_+] = hL_+$
+    \item (D) $[L_z, L_-] = hL_-$
+\end{enumerate}
+\item The Lagrangian of a system with one degree of freedom $q$ is given by $L = \alpha \dot{q}^2 + \beta q^2$, where $\alpha$ and $\beta$ are non-zero constants. If $p_q$ denotes the canonical momentum conjugate to $q$ then which one of the following statements is CORRECT?
+\begin{enumerate}
+    \item $p_q = 2\beta q$ \quad and it is a conserved quantity.
+    \item $p_q = 2\beta q$ \quad and it is not a conserved quantity.
+    \item $p_q = 2\alpha \dot{q}$ \quad and it is a conserved quantity.
+    \item $p_q = 2\alpha \dot{q}$ \quad and it is not a conserved quantity.
+\end{enumerate} 
+\item What should be the clock frequency of a $6$-bit A/D converter so that its maximum conversion time is $32 \mu$s?
+\begin{multicols}{4}
+\begin{enumerate}
+    \item  $1$ MHz
+    \item  $2$ MHz
+    \item  $0.5$ MHz
+    \item  $4$ MHz
+\end{enumerate}
+\end{multicols}
+
+\item A phosphorous doped silicon semiconductor (doping density: $10^{17}/cm^3$) is heated from $100^\circ C$ to $200^\circ C$. Which one of the following statements is CORRECT? 
+
+\begin{enumerate}
+    \item Position of Fermi level moves towards conduction band
+    \item Position of dopant level moves towards conduction band
+    \item Position of Fermi level moves towards middle of energy gap
+    \item Position of dopant level moves towards middle of energy gap
+\end{enumerate}
+
+\item Considering the BCS theory of superconductors, which one of the following statements is NOT CORRECT?\\
+(h is the Planck's constant and $e$ is the electronic charge)
+
+\begin{enumerate}
+    \item Presence of energy gap at temperatures below the critical temperature
+    \item Different critical temperatures for isotopes
+    \item Quantization of magnetic flux in superconducting ring in the unit of $\left(\dfrac{h}{e}\right)$
+    \item Presence of Meissner effect
+\end{enumerate}
+
+\item Group $\mathrm{I}$ contains elementary excitations in solids. Group $\mathrm{II}$ gives the associated fields with these excitations. MATCH the excitations with their associated field and select your answer as per codes given below.
+
+\begin{tabular}{|c|c|} 
+\hline
+Group $\mathrm{I}$ & Group $\mathrm{II}$ \\
+\hline
+(P) phonon & (i) photon + lattice vibration \\
+\hline
+(Q) plasmon & (ii) electron + elastic deformation \\
+\hline
+(R) polaron & (iii) collective electron oscillations \\
+\hline
+(S) polariton & (iv) elastic wave \\
+\hline
+\end{tabular} \\
+
+Codes 
+
+\begin{enumerate}
+    \item (P-iv), (Q-iii), (R-i), (S-ii)
+    \item (P-iv), (Q-iii), (R-ii), (S-i)
+    \item (P-i), (Q-iii), (R-ii), (S-iv)
+    \item (P-iii), (Q-iv), (R-ii), (S-i)
+\end{enumerate}
+
+\item The number of distinct ways of placing four indistinguishable balls into five distinguishable boxes is $\underline{\hspace{2cm}}$.
+
+\item A voltage regulator has ripple rejection of $-50$dB. If input ripple is 1 mV, what is the output ripple voltage in $\mu$V? The answer should be up to two decimal places.
+
+\underline{\hspace{2cm}}
+
+\item The number of spectral lines allowed in the spectrum for the $3^2D \rightarrow 3^2P$ transition in sodium is
+
+\underline{\hspace{2cm}}
+
+\section{carry two marks each}
+\item Which of the following pairs of the given function $F(t)$ and its Laplace transform $f(s)$ is NOT CORRECT?
+
+
+\begin{enumerate}
+    \item $F(t)=\delta(t), \quad f(s)=1, \quad (\text{Singularity at }+0)$
+    \item $F(t)=1, \quad f(s)=\dfrac{1}{s}, \quad (s>0)$
+    \item $F(t)=\sin kt, \quad f(s)=\dfrac{k}{s^2+k^2}, \quad (s>0)$
+    \item $F(t)=te^{kt}, \quad f(s)=\dfrac{1}{(s-k)^2}, \quad (s>k, s>0)$
+\end{enumerate}
+
+
+
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,24 @@
+\begin{lstlisting}[language=Python]
+ #Generate the lower half of the circle
+y_circle_lower = k - np.sqrt(r**2 - (x_vals - h)**2)
+# Plot the curves
+plt.plot(x_vals, y_parabola, label=r'Parabola: $x^2 = 4py$', color='r')
+plt.plot(x_vals, y_circle_upper, label=r'Circle: $(x - %.2f)^2 + (y - %.2f)^2 = %.2f^2$' % (h, k, r), color='b')
+plt.plot(x_vals, y_circle_lower, color='b')  # Lower part of the circle (no extra label)
+
+# Fill the area between the curves
+plt.fill_between(x_vals, y_parabola, y_circle_upper, where=(y_circle_upper >= y_parabola), color='lightblue', alpha=0.5)
+
+# Labels and plot settings
+plt.xlabel('$x$')
+plt.ylabel('$y$')
+plt.title('Area Enclosed by the Parabola and Circle')
+plt.grid(True)
+plt.legend()
+
+# Set equal aspect ratio to avoid distortion
+plt.gca().set_aspect('equal', adjustable='box')
+
+# Show the plot
+plt.show()
+\end{lstlisting}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.11)  6 NOV 2024 06:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.11)  6 NOV 2024 06:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1126,108 +1126,18 @@ thkerncmss.
 ] [6
 
 ]
-
-! LaTeX Error: Environment figre undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.145 \end{frame}
-                 
-? 
 <figs/fig2.png, id=105, 462.528pt x 346.896pt>
 File: figs/fig2.png Graphic file (type png)
 <use figs/fig2.png>
 Package pdftex.def Info: figs/fig2.png  used on input line 145.
 (pdftex.def)             Requested size: 342.2953pt x 256.73607pt.
 
-! Package caption Error: \caption outside float.
+Overfull \vbox (67.72958pt too high) detected at line 145
+ []
 
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.145 \end{frame}
-                 
-? 
+[7
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 145 ended by \end{cente
-r}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.145 \end{frame}
-                 
-? 
-
-! LaTeX Error: \begin{beamer@framepauses} on input line 145 ended by \end{figur
-e}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.145 \end{frame}
-                 
-? 
-
-! LaTeX Error: \begin{beamer@frameslide} on input line 145 ended by \end{beamer
-@framepauses}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.145 \end{frame}
-                 
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.145 \end{frame}
-                 
-? 
-! Too many }'s.
-\endbeamer@frameslide ...amer@framepauses}\egroup 
-                                                  \ifx \beamer@frametitle \@...
-l.145 \end{frame}
-                 
-? 
-! Undefined control sequence.
-\endbeamer@frameslide ...box \else \beamer@zoomer 
-                                                  \fi \beamer@undolabels \be...
-l.145 \end{frame}
-                 
-? 
-
-! LaTeX Error: \begin{document} ended by \end{beamer@frameslide}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.145 \end{frame}
-                 
-? 
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.145 \end{frame}
-                 
-? 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7
-
-]
-Overfull \vbox (27.19357pt too high) has occurred while \output is active []
-
-
-[8 <./figs/fig2.png>]
+ <./figs/fig2.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
@@ -1262,12 +1172,12 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 Overfull \vbox (9.39334pt too high) detected at line 170
  []
 
-[9
+[8
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [10
+ (./main.vrb) [9
 
 ]
 \openout4 = `main.vrb'.
@@ -1279,7 +1189,7 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 Overfull \vbox (9.39334pt too high) detected at line 219
  []
 
-[11
+[10
 
 ]
 \openout4 = `main.vrb'.
@@ -1288,7 +1198,7 @@ Overfull \vbox (9.39334pt too high) detected at line 219
 Overfull \vbox (0.11983pt too high) detected at line 243
  []
 
-[12
+[11
 
 ]
 \openout4 = `main.vrb'.
@@ -1297,7 +1207,7 @@ Overfull \vbox (0.11983pt too high) detected at line 243
 Overfull \vbox (13.71982pt too high) detected at line 269
  []
 
-[13
+[12
 
 ]
 \openout4 = `main.vrb'.
@@ -1306,7 +1216,7 @@ Overfull \vbox (13.71982pt too high) detected at line 269
 Overfull \vbox (95.31976pt too high) detected at line 296
  []
 
-[14
+[13
 
 ]
 \tf@nav=\write6
@@ -1322,14 +1232,17 @@ Overfull \vbox (95.31976pt too high) detected at line 296
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 69D60A092A8862A10318FA8FC5C20A10;956.
  ) 
 Here is how much of TeX's memory you used:
- 27409 strings out of 478287
- 520519 string characters out of 5849289
- 1238254 words of memory out of 5000000
- 44999 multiletter control sequences out of 15000+600000
+ 27410 strings out of 478287
+ 520551 string characters out of 5849289
+ 1238123 words of memory out of 5000000
+ 45002 multiletter control sequences out of 15000+600000
  477691 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,131p,403b,1523s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1345,10 +1258,10 @@ s/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on main.pdf (14 pages, 166594 bytes).
+Output written on main.pdf (13 pages, 166555 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
  132 words of extra memory for PDF output out of 10000 (max. 10000000)
 

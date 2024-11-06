@@ -4,5 +4,5 @@
 \beamer@subsectionintoc {3}{2}{Intersection of conics}{5}{0}{2}
 \beamer@subsectionintoc {3}{3}{Area calculation}{6}{0}{2}
 \beamer@subsectionintoc {3}{4}{Figure}{7}{0}{2}
-\beamer@sectionintoc {4}{C Code}{9}{0}{3}
-\beamer@sectionintoc {5}{Python Code}{11}{0}{4}
+\beamer@sectionintoc {4}{C Code}{8}{0}{3}
+\beamer@sectionintoc {5}{Python Code}{10}{0}{4}
